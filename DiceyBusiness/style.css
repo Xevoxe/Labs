@@ -1,0 +1,44 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+.dice {
+    width:20%;
+    height: 25px;
+    float:left;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    margin:10px;
+}
+
+#container-1 {
+    float:left;
+    width: 20%;
+    background:rgb(197, 197, 197);
+    margin-top:10px;
+}
+
+#container-2 {
+    display:relative;
+    float:right;
+    width:80%;
+
+}
+
+button {
+    display:block;
+    width: 80%;
+    padding:10px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
