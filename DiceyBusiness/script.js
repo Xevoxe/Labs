@@ -41,11 +41,9 @@ Dice.sum = () => {
 
 $(document).ready(function (){
 
-    let ids = 0;
-
     $("#btn-Generate").click(()=> {
 
-        //Add Die Roll button if there is not dice on the board
+        //Add Die Roll button if there is no dice on the board
         if(Dice.list.length === 0){
             let btn = $(`<button>Roll Dice!</button>`).click(()=>{
                 for(let i = 0; i < Dice.list.length; i++){
@@ -76,7 +74,7 @@ function createClickHandler(die){
     let prevent = false;
 
     function handler(){
-            //If no click event has been triggered track click event and if it has prevent single click event from triggering
+            //If no click event has been triggered track click event and if it has, prevent single click event from triggering
             if(!prevent){       
             timer = setTimeout( () => {
                     die.roll();
