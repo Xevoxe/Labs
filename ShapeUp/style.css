@@ -1,0 +1,109 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+body{
+    position: relative;
+}
+.clear-float{
+    clear:both;
+}
+.circle{
+    background:purple;
+}
+
+.square {
+    background:red;
+}
+
+.triangle {
+    border-bottom-color : yellow;
+}
+
+.rectangle {
+    background: green;
+}
+
+.shape{
+    position: absolute;
+}
+#container {
+    float:left;
+}
+
+#canvas {   
+    width: 600px;
+    height: 600px;
+    box-shadow: 0px 0px 11px #000000 inset;
+    position: relative;
+
+}
+
+#side-panel{
+    float:left;
+    padding-bottom: 15px;
+    background: rgb(240, 240, 240);
+    width: 230px;
+    border: 1px solid black;
+}
+
+#info-panel {
+    width:200px;
+    background:rgb(240, 240, 240);
+    float:left;
+    border: 1px solid black;
+}
+
+#info-panel label {
+    display:inline-block;
+    width:50%;
+    text-align: right;
+    padding: 5px;
+}
+
+
+
+span:last-child {
+    margin-bottom: 30px;
+}
+
+
+.painter {
+   margin-top:10px;
+   padding:10px;
+   margin-bottom:10px;
+
+}
+
+.painter label {
+    display:inline-block;
+    width: 40%;
+    text-align: right;
+    margin-top:10px;
+    margin-bottom:17px;
+}
+
+.painter input {
+    display:inline-block;
+    width:20%;
+}
+
+h3 {
+    text-align: center;
+    margin:0px;
+}
+
+h3::first-letter{
+    text-transform: uppercase;
+}
+
+input[type="submit"] {
+    padding: 8px;
+    width: 100%;
+}

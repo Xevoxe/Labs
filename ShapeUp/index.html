@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <title>Shape Up</title>
+</head>
+<body>
+    <div id="side-panel">
+        <div class="painter">
+            <form class="frm">
+                <h3>Rectangle</h3>
+                <label>Width:</label>
+                <input type="number" min = 10 max= 600 name="width">
+                <label>Height:</label>
+                <input type="number" min = 10 max= 600 name="height">
+                <input type="submit" value="Draw">
+            </form>
+        </div>
+        <div class="painter">
+            <form class="frm">
+                <h3>Square</h3>
+                <label>Side Length:</label>
+                <input type="number" min = 10 max= 600 name="side-length">
+                <input type="submit" value="Draw">
+            </form>
+        </div>
+        <div class="painter">
+            <form class="frm">
+                <h3>Circle</h3>
+                <label>Radius:</label>
+                <input type="number" min = 10 max= 600 name="radius">
+                <input type="submit" value="Draw">
+            </form>
+        </div>
+        <div class="painter">
+            <form class="frm">
+                <h3>Triangle</h3>
+                <label>Height:</label>
+                <input type="number" min = 20 max= 600 name="height">
+                <input type="submit" value="Draw">
+            </form>
+        </div>
+    </div>
+    <div id="container">
+        <div id="canvas"></div>
+    </div>
+        <div id="info-panel">
+            <h3>Shape Name</h3>
+            <label>Width:</label>
+            <span id="info-Width"></span>
+            <label>Height:</label>
+            <span id="info-Height"></span>
+            <label name="radius">Radius:</label>
+            <span id="info-Radius"></span>
+            <label>Area:</label>
+            <span id="info-Area"></span>
+            <label name = "perimeter">Perimeter:</label>
+            <span id="info-Perimeter"></span>
+        </div>
+  
+    <div class="clear-float"></div>
+<script src = "shapes.js"></script>
+<script src = "script.js"></script>
+</body>
+</html>
