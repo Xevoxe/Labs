@@ -21,7 +21,6 @@ $(".frm").submit(function (e) {
              case "Rectangle" : shape = new Rectangle(frm.find("input[name='width']").val(),frm.find("input[name='height']").val()).draw();
              break;
              default:
-             shape.$div
          }
          //Add clicking functionality
          let singleClick = () => {
@@ -32,10 +31,10 @@ $(".frm").submit(function (e) {
              return shape.remove();
          }
 
-         shape.click(createClickHandler(shape,singleClick,dblClick))        
+         shape.click(createClickHandler(singleClick,dblClick))        
     }
 
-    function createClickHandler(object, single, double){
+    function createClickHandler(single, double){
     
         let timer = null;
         let delay = 200;
